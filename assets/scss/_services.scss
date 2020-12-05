@@ -1,0 +1,87 @@
+/* Services Area css
+============================================================================================ */
+.our_service_area {
+  position: relative;
+  overflow: hidden;
+  .main_title {
+    margin-bottom: 22px;
+  }
+  .service_bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    // max-width: 1920px;
+    // margin: auto;
+    .left {
+      width: calc(50% - 278px);
+      float: left;
+      text-align: right;
+      @media (min-width: 1921px) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .right {
+      width: calc(50% + 278px);
+      float: right;
+      @media (min-width: 1921px) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.service_box {
+  background: #f2f2f2;
+  position: relative;
+  max-width: 1042px;
+  float: right;
+  padding: 40px 55px 45px 50px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  .col-md-6 {
+    margin-bottom: 28px;
+    &:nth-child(even) {
+      padding-left: 38px;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.service_item {
+  .media {
+    .d-flex {
+      padding-right: 28px;
+      ion-icon {
+        color: $baseColor;
+        font-size: 55px;
+      }
+    }
+    .media-body {
+      h4 {
+        color: $blue;
+        font: 600 22px/32px $pop;
+        margin-bottom: 13px;
+        @include transition;
+        &:hover {
+          color: $baseColor;
+        }
+      }
+      p {
+        margin-bottom: 0px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+/* End Services Area css
+============================================================================================ */

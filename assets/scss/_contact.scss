@@ -1,0 +1,91 @@
+/* Contact Area css
+============================================================================================ */
+.contact_area {
+  background: #fafafa;
+  .main_title {
+    h2 {
+      color: #000;
+    }
+  }
+}
+.contact_form {
+  .form-group {
+    margin-bottom: 30px;
+    input {
+      background: #fff;
+      border-radius: 3px;
+      border-color: #eaeaea;
+      height: 54px;
+      font: 400 16px/54px $pop;
+      color: #c3c3c3;
+      padding: 0px 18px;
+      outline: none;
+      box-shadow: none;
+      @include placeholder {
+        font: 400 16px/54px $pop;
+        color: #c3c3c3;
+      }
+    }
+    textarea {
+      background: #fff;
+      border-radius: 3px;
+      border-color: #eaeaea;
+      height: 183px;
+      font: 400 16px/54px $pop;
+      color: #c3c3c3;
+      padding: 0px 18px;
+      outline: none;
+      box-shadow: none;
+      resize: none;
+      @include placeholder {
+        font: 400 16px/54px $pop;
+        color: #c3c3c3;
+      }
+    }
+    .submit_btn {
+      padding: 0px 30px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.address_text {
+  .address_item {
+    margin-bottom: 35px;
+    p {
+      margin-bottom: 0px;
+    }
+    h5 {
+      color: $blue;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: $pfont;
+      font-size: 16px;
+      @include transition;
+      &:hover {
+        color: $baseColor;
+      }
+    }
+  }
+}
+.social_icon {
+  li {
+    margin-right: 32px;
+    a {
+      color: $baseColor;
+      font-size: 30px;
+      @include transition;
+      &:hover {
+        color: $blue;
+      }
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+/* End Contact Area css
+============================================================================================ */

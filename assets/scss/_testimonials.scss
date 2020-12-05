@@ -1,0 +1,72 @@
+/* Testimonials Area css
+============================================================================================ */
+.testimonials_area {
+  .testi_slider {
+    margin-bottom: 0px;
+  }
+}
+.testi_slider {
+  .item {
+    outline: none;
+  }
+  .slick-dots {
+    bottom: 72px;
+    margin-left: -118px;
+    li {
+      height: 3px;
+      width: 35px;
+      background: #b2b2b2;
+      margin: 0px;
+      margin-right: 10px;
+      button {
+        display: none;
+        &:before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        background: $baseColor;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.testi_item {
+  .testi_img {
+    display: inline-block;
+    border: 15px solid #eaeaea;
+    border-radius: 50%;
+    position: relative;
+    &:before {
+      content: "\f10d";
+      font: normal normal normal 20px/58px FontAwesome;
+      color: $baseColor;
+      position: absolute;
+      right: 0px;
+      top: 24px;
+      height: 58px;
+      width: 58px;
+      border-radius: 50%;
+      background: #eaeaea;
+      text-align: center;
+    }
+  }
+  .testi_text {
+    p {
+      margin-bottom: 25px;
+    }
+    h4 {
+      color: $blue;
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    h6 {
+      font: 400 16px/26px $pop;
+      color: #9b9b9b;
+    }
+  }
+}
+/* End Testimonials Area css
+============================================================================================ */

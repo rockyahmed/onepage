@@ -1,0 +1,34 @@
+/* Button Area css
+============================================================================================ */
+.main_btn {
+  background: $baseColor;
+  color: #fff;
+  font: 600 16px/46px $pop;
+  display: inline-block;
+  padding: 0px 28px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  @include transition;
+  &:hover {
+    background: #fff;
+    color: $blue;
+  }
+}
+.submit_btn {
+  background: $baseColor;
+  color: #fff;
+  font: 600 16px/46px $pop;
+  display: inline-block;
+  padding: 0px 28px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  @include transition;
+  outline: none !important;
+  box-shadow: none;
+  &:hover {
+    background: $blue;
+    color: #fff;
+  }
+}
+/* End Button Area css
+============================================================================================ */

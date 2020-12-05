@@ -1,0 +1,227 @@
+/* Projects Area css
+============================================================================================ */
+.project_slider {
+  overflow: hidden;
+  margin-bottom: 0px !important;
+  padding-bottom: 52px;
+  .slick-list {
+    margin: 0px -15px;
+  }
+  .item {
+    padding-right: 15px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+  }
+  .slick-dots {
+    bottom: 0px;
+    li {
+      height: 3px;
+      width: 35px;
+      background: #b2b2b2;
+      margin: 0px;
+      margin-right: 10px;
+      button {
+        display: none;
+        &:before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        background: $baseColor;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.project_item {
+  overflow: hidden;
+  .p_img {
+    margin-bottom: 35px;
+    overflow: hidden;
+    position: relative;
+    img {
+      transform: scale(1);
+      @include transition;
+    }
+    .team_social {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 25, 76, 0.79);
+      padding: 15px 0px 13px 0px;
+      transform: translateZ(0);
+      transform-origin: 50% 100%;
+      transform: scaleY(0);
+      transition: all 400ms linear 0s;
+      justify-content: center;
+      li {
+        margin-right: 30px;
+        a {
+          color: $baseColor;
+          font-size: 20px;
+          @include transition;
+          &:hover {
+            color: #fff;
+          }
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  .project_text {
+    text-align: center;
+    h4 {
+      color: $blue;
+      font: 600 22px/32px $pop;
+      margin-bottom: 6px;
+      @include transition;
+      &:hover {
+        color: $baseColor;
+      }
+    }
+    h5 {
+      font: 400 16px/26px $pop;
+      color: #9b9b9b;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  &:hover {
+    .p_img {
+      img {
+        transform: scale(1.1);
+      }
+      .team_social {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+/* End Projects Area css
+============================================================================================ */
+
+/* Our Work Area css
+============================================================================================ */
+.our_work_area {
+  position: relative;
+  z-index: 2;
+  &:before {
+    content: "";
+    background: rgba(0, 25, 76, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .main_title {
+    margin-bottom: 50px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      padding-right: 20px;
+    }
+  }
+}
+.work_vision_area {
+  -webkit-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.18);
+  position: relative;
+  bottom: -128px;
+  margin-top: -128px;
+  .col-md-6 {
+    &:first-child {
+      border-right: 1px solid #e0e0e0;
+      .work_item {
+        position: relative;
+        &:before {
+          content: "";
+          background: url(../images/icon/circle-1.png) no-repeat;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          height: 251px;
+          width: 200px;
+        }
+      }
+    }
+    &:last-child {
+      .work_item {
+        background: #fbfbfb;
+      }
+    }
+  }
+}
+.work_item {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 55px 30px 35px 30px;
+  ion-icon {
+    color: $baseColor;
+    font-size: 55px;
+    margin-bottom: 5px;
+  }
+  h4 {
+    color: $blue;
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.our_team_area {
+  padding-top: 250px;
+}
+
+/* End Our Work Area css
+============================================================================================ */
+
+/* Quote Area css
+============================================================================================ */
+.quote_area {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 83px 0px 88px 0px;
+  &:before {
+    content: "";
+    background: rgba(0, 25, 76, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .left {
+    h3 {
+      font: 500 50px/60px $pop;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .right {
+    align-self: center;
+    .main_btn {
+      margin-top: 3px;
+    }
+  }
+}
+/* End Quote Area css
+============================================================================================ */
